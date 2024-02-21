@@ -8,27 +8,39 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <header>
+            <img src="img/Frame 6.png" alt="icono de Alura" class="imagen-alura">
+            <p class="texto-personal"></p>
+        </header>
+
         <main class="main-index">
 
-            <img src="img/Frame 6.png" alt="icono de Alura" class="imagen-alura">
-
-            <textarea cols="50" rows="12" class="campo-texto" placeholder="Ingrese el texto aquí" wrap="hard"></textarea>
-            <p class="warning">Solo letras minúsculas y sin acentos</p>
-            <div class="botones">
-                <button onclick="encriptar()" class="encriptar">Encriptar</button>
-                <button onclick="desencriptar()" class="desencriptar" disabled>Desencriptar </button>
+            <div class="area-texto">
+                <textarea cols="50" rows="12" class="campo-texto" placeholder="Ingrese el texto aquí" wrap="hard"></textarea>
+                <p class="warning">Solo letras minúsculas y sin acentos</p>
+                <div class="botones">
+                    <button onclick="encriptar()" class="encriptar">Encriptar</button>
+                    <button onclick="desencriptar()" class="desencriptar">Desencriptar</button>
+                </div>
             </div>
+            
 
             <div class="box-texto">
+                <p class="box-desencripta"></p>
                 <img src="img/Muñeco.png" alt="ningún-mensaje-encontrado" class="imagen-muneco">
                 <div class="box-parrafos">
                     <p class="box-titulo">Ningún mensaje fue encontrado</p>
                     <p class="box-subtitulo">Ingresa el texto que desees encriptar o desencriptar.</p>
-                    <p class="box-desencripta"></p>
                 </div>
+                <button onclick="copiar()" class="copiar">Copiar</button>
             </div>
 
         </main>
+
+        <footer>
+            <p>Desarrollado por Juan Luis Barraza Ramírez</p>
+        </footer>
+        
 
         <script src="app.js"></script>
 
